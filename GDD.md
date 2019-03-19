@@ -1,5 +1,5 @@
 # Cruiser
-- version 0.1
+- version 0.2
 - written by masonorovic
 
 # Overview
@@ -34,8 +34,7 @@
         - intercooler - protects turbocharger from overheating
     - supercharger
 - radiator - can only take some power before engine overheats
-- ECU - changes timing, boost pressure, protections (overheating, rev limiter), 2 step, idle RPM
-- flywheel - different weights
+- ECU - adds power, boost pressure, protections (overheating, rev limiter), 2 step, idle RPM
 - ventils - propably can take only some RPMs
 - fuel pump - with raising power player has to get pump with more power
 - fuel tank - different size and it's weight (depends on fuel level)

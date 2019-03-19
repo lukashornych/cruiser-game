@@ -1,0 +1,111 @@
+# Car structure
+- version 0.1
+- how parts are named and what information they should have etc.
+
+## Which parts and informations should each part have
+- car
+    - code name
+    - engine *object*
+        - model name
+        - displacement
+        - base torque curve
+        - calculated torque curve from modifications
+        - pistons *object*
+            - code name
+            - max torque
+            - damage
+        - crankshaft *object*
+            - code name
+            - max torque
+            - damage
+        - camshaft *object*
+            - code name
+            - torque increase
+        - intake manifold *object*
+            - code name
+            - torque increase
+        - air filter *object*
+            - code name
+            - torque increase
+        - exhaust *object*
+            - code name
+            - torque increase
+        - radiator *object*
+            - code name
+            - max torque to not overheat engine
+        - forced induction system *abstract object*
+            - code name
+            - max boost
+            - torque curve
+            - damage
+        - ECU *object*
+            - code name
+            - boost pressure (depends on forced induction system)
+            - rev limiter *object*
+                - max RPM
+                - launch RPM
+                - launch control on
+            - engine overheat protection *object*
+                - turned on
+                - temperature
+            - forced induction system overheat protection *object*
+                - turned on
+                - temperature
+            - idle RPM
+        - valves *object*
+            - code name
+            - max RPM
+            - damage
+        - fuel pump *object*
+            - code name
+            - max torque
+            - max RPM
+        - fuel tank *object*
+            - code name
+            - max fuel capacity
+            - fuel level
+    - drivetrain *object*
+        - max tires diameter
+        - transmission *object*
+            - code name
+            - type
+                - manual
+                - automatic
+            - efficiency
+            - gear ratios
+                - reverse, 1st, 2nd,...
+            - damage
+        - tires *object*
+            - code name
+            - diameter
+            - width
+            - tire friction coefficient
+                - depends on damage
+            - damage
+        - differential *object*
+            - code name
+            - final drive ratio
+    - body *object*
+        - car code name
+        - color
+        - headlights *object*
+            - lighting shape
+            - color temperature
+        - hood *object*
+            - supported intakes
+    - interior *object*
+        - car code name
+        - head unit *object*
+            - code name
+        - speakers *object*
+            - code name
+        - stripped rear seats
+        - stripped passenger seat
+        
+## Inherited objects
+- forced induction system
+    - turbocharger
+        - intercooler *object*
+            - code name
+            - max boost to not overheat forced induction system
+    - supercharger
