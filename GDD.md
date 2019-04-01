@@ -1,5 +1,5 @@
 # Cruiser
-- version 0.3
+- version 0.4
 - written by masonorovic
 
 # Overview
@@ -43,6 +43,7 @@
 - transmission - different efficiency, different sound of dogbox, different gear ratios (short and long)
 - tires - coefficient, diameter (different speed)
 - differencial - changeable final gear ratio
+- brakes - different brake forces
 
 #### Body
 - color - only mate colors (because of art style)
@@ -55,6 +56,7 @@
 #### Interior
 - interior stripping - saves weight
 - audio system (radio and speakers) - player can or cannot play his music
+- driver seat - saves weight
 
 ### Wearing parts out
 - tires - burnouts and drifts wore tires more
