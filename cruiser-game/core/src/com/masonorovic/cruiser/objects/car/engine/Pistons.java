@@ -4,11 +4,15 @@ public class Pistons {
     private String codeName;
     private int maxTorque;
     private float damage;
+    private int weightReduction;
+    private String engineCodeName;
 
-    public Pistons(String codeName, int maxTorque, float damage) {
+    public Pistons(String codeName, int maxTorque, float damage, int weightReduction, String engineCodeName) {
         this.codeName = codeName;
         this.maxTorque = maxTorque;
         this.damage = damage;
+        this.weightReduction = weightReduction;
+        this.engineCodeName = engineCodeName;
     }
 
     public String getCodeName() {
@@ -25,5 +29,13 @@ public class Pistons {
 
     public void setDamage(float damage) {
         this.damage = damage;
+    }
+
+    public int getWeightReduction() {
+        return weightReduction;
+    }
+
+    public String getEngineCodeName() {
+        return engineCodeName;
     }
 }

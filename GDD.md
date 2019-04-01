@@ -1,5 +1,5 @@
 # Cruiser
-- version 0.2
+- version 0.3
 - written by masonorovic
 
 # Overview
@@ -161,7 +161,9 @@
     - high beams: K
     - up shift: left and right SHIFT
     - down shift: left and right CONTROL
-    - clutch : ALT, ALT GR
+    - clutch: ALT, ALT GR
+    - automatic transmission mode switch: E
+    - map: M
 
 ## Main menu
 - simple screen with slightly blurred garage from the outside

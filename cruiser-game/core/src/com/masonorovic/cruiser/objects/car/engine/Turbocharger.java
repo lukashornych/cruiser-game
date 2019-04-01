@@ -4,7 +4,7 @@ public class Turbocharger extends ForcedInductionSystem {
     private Intercooler intercooler;
 
     public Turbocharger(String codeName,
-                        float maxBoostPressure,
+                        int maxBoostPressure,
                         float[] torqueCurve,
                         float damage,
                         Intercooler intercooler) {

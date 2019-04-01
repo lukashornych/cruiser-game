@@ -4,11 +4,13 @@ public class Crankshaft {
     private String codeName;
     private int maxTorque;
     private float damage;
+    private String engineCodeName;
 
-    public Crankshaft(String codeName, int maxTorque, float damage) {
+    public Crankshaft(String codeName, int maxTorque, float damage, String engineCodeName) {
         this.codeName = codeName;
         this.maxTorque = maxTorque;
         this.damage = damage;
+        this.engineCodeName = engineCodeName;
     }
 
     public String getCodeName() {
@@ -25,5 +27,9 @@ public class Crankshaft {
 
     public void setDamage(float damage) {
         this.damage = damage;
+    }
+
+    public String getEngineCodeName() {
+        return engineCodeName;
     }
 }

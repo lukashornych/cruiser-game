@@ -3,10 +3,12 @@ package com.masonorovic.cruiser.objects.car.engine;
 public class Camshaft {
     private String codeName;
     private float torqueIncrease;
+    private String engineCodeName;
 
-    public Camshaft(String codeName, float torqueIncrease) {
+    public Camshaft(String codeName, float torqueIncrease, String engineCodeName) {
         this.codeName = codeName;
         this.torqueIncrease = torqueIncrease;
+        this.engineCodeName = engineCodeName;
     }
 
     public String getCodeName() {
@@ -15,5 +17,9 @@ public class Camshaft {
 
     public float getTorqueIncrease() {
         return torqueIncrease;
+    }
+
+    public String getEngineCodeName() {
+        return engineCodeName;
     }
 }

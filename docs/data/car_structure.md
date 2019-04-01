@@ -1,26 +1,28 @@
 # Car structure
-- version 0.1
-- how parts are named and what information they should have etc.
+- version 0.2
+- how parts are named and what information they should have etc. in game
 
 ## Which parts and informations should each part have
 - car
-    - code name
     - engine *object*
-        - model name
-        - displacement
+        - code name
         - base torque curve
         - calculated torque curve from modifications
         - pistons *object*
             - code name
             - max torque
             - damage
+            - weight reduction
+            - engine code name
         - crankshaft *object*
             - code name
             - max torque
             - damage
+            - engine code name
         - camshaft *object*
             - code name
             - torque increase
+            - engine code name
         - intake manifold *object*
             - code name
             - torque increase
@@ -41,21 +43,24 @@
         - ECU *object*
             - code name
             - boost pressure (depends on forced induction system)
+            - idle RPM
+            - can protect from temperatures
             - rev limiter *object*
                 - max RPM
                 - launch RPM
                 - launch control on
+                - can launch control
             - engine overheat protection *object*
                 - turned on
                 - temperature
             - forced induction system overheat protection *object*
                 - turned on
                 - temperature
-            - idle RPM
         - valves *object*
             - code name
             - max RPM
             - damage
+            - engine code name
         - fuel pump *object*
             - code name
             - max torque
@@ -65,6 +70,7 @@
             - max fuel capacity
             - fuel level
     - drivetrain *object*
+        - car code name
         - max tires diameter
         - transmission *object*
             - code name
@@ -85,6 +91,10 @@
         - differential *object*
             - code name
             - final drive ratio
+        - brakes *object*
+            - code name
+            - damage
+            - max brake force
     - body *object*
         - car code name
         - color
@@ -95,12 +105,15 @@
             - supported intakes
     - interior *object*
         - car code name
+        - stripped rear seats
+        - stripped passenger seat
         - head unit *object*
             - code name
         - speakers *object*
             - code name
-        - stripped rear seats
-        - stripped passenger seat
+        - seat *object*
+            - code name
+            - weight reduction
         
 ## Inherited objects
 - forced induction system

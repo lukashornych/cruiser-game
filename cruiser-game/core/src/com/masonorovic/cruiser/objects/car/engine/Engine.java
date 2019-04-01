@@ -2,7 +2,6 @@ package com.masonorovic.cruiser.objects.car.engine;
 
 public class Engine {
     private String codeName;
-    private float displacement;
     private int[] baseTorqueCurve;
 
     private Pistons pistons;
@@ -19,7 +18,6 @@ public class Engine {
     private ForcedInductionSystem forcedInductionSystem;
 
     public Engine(String codeName,
-                  float displacement,
                   int[] baseTorqueCurve,
                   Pistons pistons,
                   Crankshaft crankshaft,
@@ -34,7 +32,6 @@ public class Engine {
                   Ecu ecu,
                   ForcedInductionSystem forcedInductionSystem) {
         this.codeName = codeName;
-        this.displacement = displacement;
         this.baseTorqueCurve = baseTorqueCurve;
         this.pistons = pistons;
         this.crankshaft = crankshaft;
@@ -52,10 +49,6 @@ public class Engine {
 
     public String getCodeName() {
         return codeName;
-    }
-
-    public float getDisplacement() {
-        return displacement;
     }
 
     public int[] getBaseTorqueCurve() {

@@ -1,0 +1,144 @@
+# Car data files structure
+- version 0.1
+- how car data should look like
+- car parts static data by code names
+- costs are in $
+
+## Structure
+- car *(code: cars_data.csv)*
+    - code name
+    - cost
+    - manufacturer
+    - model name
+    - year
+- engine *(code: engines_data.csv)*
+    - code name
+    - cost
+    - name
+    - displacement
+    - cylinders
+    - base torque curve (splitted by -)
+    - turbocharger or supercharger on (NONE, T, S)
+- pistons *(code: pistons_data.csv)*
+    - code name
+    - cost
+    - name
+    - max torque
+    - weight reduction
+    - engine code name
+- crankshaft *(code: crankshafts_data.csv)*
+    - code name
+    - cost
+    - name
+    - max torque
+    - engine code name
+- camshaft *(code: camshafts_data.csv)*
+    - code name
+    - cost
+    - name
+    - torque increase
+    - engine code name
+- intake manifold *(code: intakemanifolds_data.csv)*
+    - code name
+    - cost
+    - name
+    - torque increase
+- air filter *(code: aitfilters_data.csv)*
+    - code name
+    - cost
+    - name
+    - torque increase
+- exhaust *(code: exhausts_data.csv)*
+    - code name
+    - cost
+    - name
+    - torque increase
+- radiator *(code: radiators_data.csv)*
+    - code name
+    - cost
+    - name
+    - max torque
+- turbocharger *(code: turbochargers_data.csv)*
+    - code name
+    - cost
+    - name
+    - max boost pressure
+    - torque curve (splitted by -)
+- supercharger *(code: supercharges_data.csv)*
+    - code name
+    - cost
+    - name
+    - max boost pressure
+    - torque curve (splitted by -)
+- intercooler *(code: intercoolers_data.csv)*
+    - code name
+    - cost
+    - name
+    - max boost pressure
+- ecu *(code: ecus_data.csv)*
+    - code name
+    - cost
+    - name
+    - default idle rpm
+    - max rpm
+    - can launch control
+    - can protect from temperatures
+- valves *(code: valves_data.csv)*
+    - code name
+    - cost
+    - name
+    - max RPM
+    - engine code name
+- fuel pump *(code: fuelpumps_data.csv)*
+    - code name
+    - cost
+    - name
+    - max torque
+    - max RPM
+- fuel tank *(code: fueltanks_data.csv)*
+    - code name
+    - cost
+    - name
+    - capacity
+- drivetrain *(code: drivetrains_data.csv)*
+    - car code name
+    - max tires diameter
+- transmission *(code: transmissions_data.csv)*
+    - code name
+    - cost
+    - name
+    - type
+    - efficiency
+    - gear ratios (splitted by -)
+- tires *(code: tires_data.csv)*
+    - code name
+    - cost
+    - name
+    - diameter
+    - width
+    - tire friction coefficient of new tires
+- differential *(code: differentials_data.csv)*
+    - code name
+    - cost
+    - name
+    - final drive ratio
+- *todo: body* *(code: bodies_data.csv)*
+    - car code name
+- head unit  *(code: hus_data.csv)*
+    - code name
+    - cost
+    - name
+- speakers *(code: speakers_data.csv)*
+    - code name
+    - cost
+    - name
+- driver seats *(code: seats_data.csv)*
+    - code name
+    - cost
+    - name
+    - weight reduction
+- brakes *(code: brakes_data.csv)*
+    - code name
+    - cost
+    - name
+    - max brake force

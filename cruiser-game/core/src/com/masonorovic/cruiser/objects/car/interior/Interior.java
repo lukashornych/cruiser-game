@@ -7,17 +7,20 @@ public class Interior {
 
     private HeadUnit headUnit;
     private Speakers speakers;
+    private Seat seat;
 
     public Interior(String carCodeName,
                     boolean strippedRearSeats,
                     boolean strippedPassengerSeat,
                     HeadUnit headUnit,
-                    Speakers speakers) {
+                    Speakers speakers,
+                    Seat seat) {
         this.carCodeName = carCodeName;
         this.strippedRearSeats = strippedRearSeats;
         this.strippedPassengerSeat = strippedPassengerSeat;
         this.headUnit = headUnit;
         this.speakers = speakers;
+        this.seat = seat;
     }
 
     public String getCarCodeName() {
@@ -54,5 +57,13 @@ public class Interior {
 
     public void setStrippedPassengerSeat(boolean strippedPassengerSeat) {
         this.strippedPassengerSeat = strippedPassengerSeat;
+    }
+
+    public Seat getSeat() {
+        return seat;
+    }
+
+    public void setSeat(Seat seat) {
+        this.seat = seat;
     }
 }

@@ -4,11 +4,13 @@ public class RevLimiter {
     private int maxRpm;
     private boolean launchControlOn;
     private int launchControlRpm;
+    private boolean canLaunchControl;
 
-    public RevLimiter(int maxRpm, boolean launchControlOn, int launchControlRpm) {
+    public RevLimiter(int maxRpm, boolean launchControlOn, int launchControlRpm, boolean canLaunchControl) {
         this.maxRpm = maxRpm;
         this.launchControlOn = launchControlOn;
         this.launchControlRpm = launchControlRpm;
+        this.canLaunchControl = canLaunchControl;
     }
 
     public int getMaxRpm() {
@@ -21,5 +23,9 @@ public class RevLimiter {
 
     public int getLaunchControlRpm() {
         return launchControlRpm;
+    }
+
+    public boolean isCanLaunchControl() {
+        return canLaunchControl;
     }
 }

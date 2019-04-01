@@ -2,12 +2,12 @@ package com.masonorovic.cruiser.objects.car.engine;
 
 public abstract class ForcedInductionSystem {
     protected String codeName;
-    protected float maxBoostPressure;
+    protected int maxBoostPressure;
     protected float[] torqueCurve;
     protected float damage;
 
     protected ForcedInductionSystem(String codeName,
-                                    float maxBoostPressure,
+                                    int maxBoostPressure,
                                     float[] torqueCurve,
                                     float damage) {
         this.codeName = codeName;
@@ -20,7 +20,7 @@ public abstract class ForcedInductionSystem {
         return codeName;
     }
 
-    public float getMaxBoostPressure() {
+    public int getMaxBoostPressure() {
         return maxBoostPressure;
     }
 

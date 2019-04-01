@@ -2,21 +2,24 @@ package com.masonorovic.cruiser.objects.car.engine;
 
 public class Ecu {
     private String codeName;
-    private float boostPressure;
+    private int boostPressure;
     private int idleRpm;
+    private boolean canProtectFromOverheat;
     private RevLimiter revLimiter;
     private EngineOverheatProtection engineOverheatProtection;
     private ForcedInductionSystemOverheatProtection forcedInductionSystemOverheatProtection;
 
     public Ecu(String codeName,
-               float boostPressure,
+               int boostPressure,
                int idleRpm,
+               boolean canProtectFromOverheat,
                RevLimiter revLimiter,
                EngineOverheatProtection engineOverheatProtection,
                ForcedInductionSystemOverheatProtection forcedInductionSystemOverheatProtection) {
         this.codeName = codeName;
         this.boostPressure = boostPressure;
         this.idleRpm = idleRpm;
+        this.canProtectFromOverheat = canProtectFromOverheat;
         this.revLimiter = revLimiter;
         this.engineOverheatProtection = engineOverheatProtection;
         this.forcedInductionSystemOverheatProtection = forcedInductionSystemOverheatProtection;
@@ -26,11 +29,11 @@ public class Ecu {
         return codeName;
     }
 
-    public float getBoostPressure() {
+    public int getBoostPressure() {
         return boostPressure;
     }
 
-    public void setBoostPressure(float boostPressure) {
+    public void setBoostPressure(int boostPressure) {
         this.boostPressure = boostPressure;
     }
 
@@ -52,5 +55,9 @@ public class Ecu {
 
     public ForcedInductionSystemOverheatProtection getForcedInductionSystemOverheatProtection() {
         return forcedInductionSystemOverheatProtection;
+    }
+
+    public boolean isCanProtectFromOverheat() {
+        return canProtectFromOverheat;
     }
 }

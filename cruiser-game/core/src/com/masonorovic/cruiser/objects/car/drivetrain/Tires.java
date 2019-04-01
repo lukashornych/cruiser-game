@@ -2,14 +2,14 @@ package com.masonorovic.cruiser.objects.car.drivetrain;
 
 public class Tires {
     private String codeName;
-    private int diameter;
-    private int width;
+    private float diameter;
+    private float width;
     private float tireFrictionCoefficient;
     private float damage;
 
     public Tires(String codeName,
-                 int diameter,
-                 int width,
+                 float diameter,
+                 float width,
                  float tireFrictionCoefficient,
                  float damage) {
         this.codeName = codeName;
@@ -23,11 +23,11 @@ public class Tires {
         return codeName;
     }
 
-    public int getDiameter() {
+    public float getDiameter() {
         return diameter;
     }
 
-    public int getWidth() {
+    public float getWidth() {
         return width;
     }
 
