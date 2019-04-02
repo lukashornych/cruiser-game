@@ -33,6 +33,7 @@ husPath="hus_data.ods"
 speakersPath="speakers_data.ods"
 seatsPath="seats_data.ods"
 brakesPath="brakes_data.ods"
+bodiesPath="bodies_data.ods"
 
 cd "$spreadsheetsPath"
 
@@ -60,6 +61,7 @@ libreoffice --headless --convert-to csv "$spreadsheetsPath$husPath"
 libreoffice --headless --convert-to csv "$spreadsheetsPath$speakersPath"
 libreoffice --headless --convert-to csv "$spreadsheetsPath$seatsPath"
 libreoffice --headless --convert-to csv "$spreadsheetsPath$brakesPath"
+libreoffice --headless --convert-to csv "$spreadsheetsPath$bodiesPath"
 
 sed -i 's/,/;/g' "$spreadsheetsPath${carsPath/%ods/csv}"
 sed -i 's/,/;/g' "$spreadsheetsPath${enginesPath/%ods/csv}"
@@ -85,6 +87,7 @@ sed -i 's/,/;/g' "$spreadsheetsPath${husPath/%ods/csv}"
 sed -i 's/,/;/g' "$spreadsheetsPath${speakersPath/%ods/csv}"
 sed -i 's/,/;/g' "$spreadsheetsPath${seatsPath/%ods/csv}"
 sed -i 's/,/;/g' "$spreadsheetsPath${brakesPath/%ods/csv}"
+sed -i 's/,/;/g' "$spreadsheetsPath${bodiesPath/%ods/csv}"
 
 tail -n +3 "$spreadsheetsPath${carsPath/%ods/csv}" > "$outputPath${carsPath/%ods/csv}"
 tail -n +3 "$spreadsheetsPath${enginesPath/%ods/csv}" > "$outputPath${enginesPath/%ods/csv}"
@@ -110,5 +113,6 @@ tail -n +3 "$spreadsheetsPath${husPath/%ods/csv}" > "$outputPath${husPath/%ods/c
 tail -n +3 "$spreadsheetsPath${speakersPath/%ods/csv}" > "$outputPath${speakersPath/%ods/csv}"
 tail -n +3 "$spreadsheetsPath${seatsPath/%ods/csv}" > "$outputPath${seatsPath/%ods/csv}"
 tail -n +3 "$spreadsheetsPath${brakesPath/%ods/csv}" > "$outputPath${brakesPath/%ods/csv}"
+tail -n +3 "$spreadsheetsPath${bodiesPath/%ods/csv}" > "$outputPath${bodiesPath/%ods/csv}"
 
 rm *.csv

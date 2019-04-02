@@ -70,7 +70,8 @@
     - damage
 - differential *(code: differential)*
     - code name
-- *todo: body* *(code: body)*
+- body *(code: body)*
+    - color (rgba)
 - interior *(code: interior)*
     - stripped rear seats *(code: srs)*
     - stripped passenger seat *(code: sps)*

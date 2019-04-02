@@ -122,8 +122,18 @@
     - cost
     - name
     - final drive ratio
-- *todo: body* *(code: bodies_data.csv)*
+- body *(code: bodies_data.csv)*
     - car code name
+    - default color
+    - drag coefficient
+    - COG from front
+    - length
+    - width
+    - height
+    - wheelbase
+    - front track
+    - rear track
+    - weight
 - head unit  *(code: hus_data.csv)*
     - code name
     - cost

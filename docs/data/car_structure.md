@@ -97,12 +97,16 @@
             - max brake force
     - body *object*
         - car code name
-        - color
-        - headlights *object*
-            - lighting shape
-            - color temperature
-        - hood *object*
-            - supported intakes
+        - color (rgba)
+        - drag coefficient
+        - COG from front
+        - length
+        - width
+        - height
+        - wheelbase
+        - front track
+        - rear track
+        - weight
     - interior *object*
         - car code name
         - stripped rear seats

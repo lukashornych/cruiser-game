@@ -57,3 +57,5 @@ seat:factory
 #brakes
 cn:bm3e30factory
 damage:0.0
+#body
+color:ff0000ff

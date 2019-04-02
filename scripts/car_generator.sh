@@ -34,15 +34,24 @@ function writeInteriorBlock {
     echo -e "#interior\nsrs:$1\nsps:$2\nhu:$3\nspeakers:$4\nseat:$5" >> "$outputFilePath"
 }
 
+# car code name
+function writeBodyBlock {
+    bodyLine=$(cat "$dataPath/bodies_data.csv" | grep "$1")
+    bodyLine=${bodyLine/"$1;"}
+    color=${bodyLine:0:8}
+    echo -e "#body\ncolor:$color" >> "$outputFilePath"
+}
+
 echo "Cruiser game car generator"
 echo "-> type rules:"
 echo "- floats: 0.0 - 1.0"
 echo "- empty: NONE"
 echo "- boolean: TRUE, FALSE"
 
-echo "-> type car data dir path (without last /):"
-read dataPath
-echo ""
+# echo "-> type car data dir path (without last /):"
+# read dataPath
+# echo ""
+dataPath="/media/lukin/Data/LocalCoding/cruiser-game/cruiser-game/core/assets/cars_data/parts_data"
 
 echo "-> type car output file path:"
 read outputFilePath
@@ -240,6 +249,7 @@ writeCNWithDamageBlock "transmission" $transmissionCodeName $transmissionDamage
 writeCNWithDamageBlock "tires" $tiresCodeName $tiresDamage
 writeCNBlock "differential" $differentialCodeName
 writeInteriorBlock $srs $sps $huCodeName $speakersCodeName $seatCodeName
+writeBodyBlock $carCodeName
 
 echo "done!"
 exit

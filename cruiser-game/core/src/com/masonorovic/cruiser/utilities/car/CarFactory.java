@@ -1,5 +1,6 @@
 package com.masonorovic.cruiser.utilities.car;
 
+import com.badlogic.gdx.graphics.Color;
 import com.masonorovic.cruiser.objects.car.Car;
 import com.masonorovic.cruiser.objects.car.body.Body;
 import com.masonorovic.cruiser.objects.car.drivetrain.*;
@@ -119,6 +120,20 @@ public class CarFactory extends AbstractCarFactory {
     }
 
     private Body createBody(List<CarFileSection> carFileSections) {
-        return new Body(findCarFileSectionByPartCode(carFileSections, "car").getValueAsString("cn"));
+        String[] part = findPartByCodeName(cdl.getBodiesData(),
+                                            findCarFileSectionByPartCode(carFileSections, "car").getValueAsString("cn"));
+        CarFileSection bodySection = findCarFileSectionByPartCode(carFileSections, "body");
+
+        return new Body(findCarFileSectionByPartCode(carFileSections, "car").getValueAsString("cn"),
+                        Color.valueOf(bodySection.getValueAsString("color").replace("#", "")),
+                        Float.parseFloat(part[2]),
+                        Float.parseFloat(part[3]),
+                        Float.parseFloat(part[4]),
+                        Float.parseFloat(part[5]),
+                        Float.parseFloat(part[6]),
+                        Float.parseFloat(part[7]),
+                        Float.parseFloat(part[8]),
+                        Float.parseFloat(part[9]),
+                        Integer.parseInt(part[10]));
     }
 }
