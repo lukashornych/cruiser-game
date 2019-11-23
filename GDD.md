@@ -1,10 +1,18 @@
 # Cruiser
-- version 0.4
+- version 0.5
 - written by masonorovic
 
 # Overview
 - open source open world car game with working buildings (like garages, shops, petrol stations etc) and working traffic and modifying cars
 - only singleplayer (at least at the beginning)
+- *future option thought*: 
+  - community driven game:
+    - game could have some sort of marketplace where players could 	downloads community made cars and parts
+    - could exists dedicated program for making assets to the game easily 
+      - creating cars, parts
+      - uploading to marketplace
+    - marketplace should have some sort of approve system for new assets made by community to provide only quality assets
+      - maybe all assets should be added to marketplace but quality assets should be marked
 
 # Features
 ## Car
@@ -107,7 +115,7 @@
 - player have to drive there by a car and take bought parts to a garage
 - a reserved parking place on a street next to a shop to get into the shop 
     - to some special shop you can get by driving the car into the shop "garage"
-  
+
 ## Night car meetings
 - at a old school drive-in
 - street races
@@ -136,8 +144,7 @@
     - usually there are several packages to deliver in one take then he gets money
 
 # Target platform
-- Linux (main)
-- later maybe possible move to mobile platforms
+- desktop or mobile
 
 # Target audience
 - those who know at least some basic fact about cars (something like Pixel car racing)
@@ -254,4 +261,3 @@
     - working car parts buying
 7. modifying car in garages
 8. drive-in with only drag races
-9. ...
